@@ -23,20 +23,12 @@ def calculate(data,name):
     "D=given dictionary"
     
     for i in data:
-        if i==name:
-         su=0
-         for j in d[i]:
-             su+=j
-           
+        value = data[i]
+        value.append(stats.mean(data[i]))
+        value.append(stats.median(data[i]))
+        data[i] = value
+    return(data)
 
-
-         mean=su/5
-         median=(len(j)+1)/2
-         data[i].append(mean)
-         data[i].append(median)
-         return(data)
-         print("the mean mark of ",i,"is ",mean)
-         print("the median of the marks is",median)
 
 def table(data,rows,columns):
     """
@@ -53,6 +45,7 @@ def plot(data):
     
 
 def main():
+    ...
     
 
 if __name__ == "__main__":
