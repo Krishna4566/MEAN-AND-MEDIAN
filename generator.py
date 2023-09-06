@@ -15,10 +15,11 @@ def generate():
    
 def calculate(data):
     for i in data:
-        value = data[i]
-        value.append(stats.mean(data[i]))
-        value.append(stats.median(data[i]))
-        data[i] = value
+        for j in i:
+            value = data[j]
+            value.append(stats.mean(data[j]))
+            value.append(stats.median(data[j]))
+            data[j] = value
     return data
 
     
