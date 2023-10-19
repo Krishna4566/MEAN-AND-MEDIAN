@@ -11,3 +11,10 @@ this code contains the following functions:
 - read_data
 - plot
 - main
+
+### generate:
+this function generates the report card. It makes use of the fpdf2 module.
+
+### calculate:
+this function calculates the mean and median makes of the student given.
+
